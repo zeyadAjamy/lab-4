@@ -10,16 +10,12 @@ int main()
 
     for(int i = 1; i <= height; ++i)
     {
-        int k = 0;
         for(space = 0; space < height-i; ++space)
-        {
-            cout <<"  ";
-        }
+            cout << "  ";
 
         for(int k =2*i; k>0; k--)
-        {
             cout << "* ";
-        }
+            
         cout << endl;
     }    
     return 0;

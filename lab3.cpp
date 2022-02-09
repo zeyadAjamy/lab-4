@@ -3,22 +3,22 @@ using namespace std;
 
 int main()
 {
-    int space, rows;
+    int space, height;
 
-    cout <<"Enter number of rows: ";
-    cin >> rows;
+    cout << "Enter number of Hight: ";
+    cin  >> height;
 
-    for(int i = 1, k = 0; i <= rows; ++i, k = 0)
+    for(int i = 1; i <= height; ++i)
     {
-        for(space = 1; space <= rows-i; ++space)
+        int k = 0;
+        for(space = 0; space < height-i; ++space)
         {
             cout <<"  ";
         }
 
-        while(k != 2*i-1)
+        for(int k =2*i; k>0; k--)
         {
             cout << "* ";
-            ++k;
         }
         cout << endl;
     }    
